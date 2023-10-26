@@ -1,16 +1,28 @@
-# reddit
+# Setting up FireBase
 
-A new Flutter project.
+1. Make sure node.js is installed and create project in Firebase
 
-## Getting Started
+2. Install firebase tools
+```
+npm install -g firebase-tools
+```
 
-This project is a starting point for a Flutter application.
+3. Login to firebase
+```
+firebase login
+```
 
-A few resources to get you started if this is your first Flutter project:
+4. Activate the flutterfire_cli
+```
+dart pub global activate flutterfire_cli
+```
+> Add the path C:\Users\{user}\AppData\Local\Pub\Cache\bin
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+5. run flutterfire configure
+```
+flutterfire configure --project=reddit-clone-tutorial-7a7f2
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+6. Add dart dependencies
+
+firebase_core, firebase_storage, cloud_firestore, firebase_auth, google_sign_in, flutter_riverpod
