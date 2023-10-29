@@ -54,6 +54,7 @@ class LoginScreen extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
+          // Google Sign Button
           SignInButton(),
         ],
       ),
