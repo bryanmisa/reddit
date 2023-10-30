@@ -6,7 +6,7 @@ import 'package:reddit/features/auth/repository/auth_repository.dart';
 // Provider is read only widget.
 // ref is a type provider ref.
 // allows to contact with other provider.
-final AuthControllerProvider = Provider(
+final authControllerProvider = Provider(
   (ref) => AuthController(
     // getting the authRepositoryProvider
     authRepository: ref.read(authRepositoryProvider),
@@ -19,6 +19,7 @@ class AuthController {
   AuthController({required AuthRepository authRepository})
       : _authRepository = authRepository;
 
+  // this function will be passed to signin_button.dart
   void signInWithGoogle() {
     _authRepository.signInWithGoogle();
   }

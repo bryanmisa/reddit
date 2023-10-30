@@ -8,6 +8,7 @@ import 'package:reddit/core/providers/firebase_providers.dart';
 /// ref. is usualy used outside the build context it wont allow you to make
 /// any changes
 
+/// Using Provider
 final authRepositoryProvider = Provider(
   (ref) => AuthRepository(
     firestore: ref.read(firestroreProvider),
